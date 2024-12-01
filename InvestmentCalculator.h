@@ -14,6 +14,8 @@ private:
     double m_annualInterestRate;      // Annual interest rate in percentage
     int m_numberOfYears;              // Number of years for investment
 
+    void displayResults(const std::vector<std::tuple<int, double, double>>& results, const std::string& header) const;
+
 public:
 
     // Constructor

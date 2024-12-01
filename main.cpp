@@ -8,7 +8,7 @@ int main() {
             // Display welcome message
             std::cout << "Welcome to Airgead Banking Investment Calculator!\n";
 
-            // Prompt user for input
+            // Gather user input
             double initialInvestment, monthlyDeposit, annualInterest;
             int numberOfYears;
 

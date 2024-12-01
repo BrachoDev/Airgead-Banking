@@ -2,22 +2,19 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "Build Airgead-Banking",
             "type": "shell",
             "command": "g++",
             "args": [
-                "-g",
-                "${workspaceFolder}/main.cpp",
-                "${workspaceFolder}/InvestmentCalculator.cpp",
+                "main.cpp",
+                "InvestmentCalculator.cpp",
                 "-o",
-                "${workspaceFolder}/AirgeadBanking.exe" // Output executable name
+                "main"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
-            "problemMatcher": ["$gcc"],
-            "detail": "Generated task by the C++ extension."
+            }
         }
     ]
 }

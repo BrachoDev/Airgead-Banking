@@ -2,21 +2,18 @@
 #define AIRGEAD_BANKING_INVESTMENT_CALCULATOR_H_
 
 #include <iostream>
-#include <vector>
-#include <iomanip> // For formatting output
+#include <vector>    // Includes the vector container library for holding results
+#include <iomanip>   // Includes library for output formatting, e.g., setting decimal precision
 
 // Class for Airgead Banking Investment Calculator to calculate investment growth.
 class InvestmentCalculator {
+
 private:
     
-    // User's initial investment amount
-    double m_initialInvestmentAmount; 
-    // User's monthly deposit
-    double m_monthlyDeposit;
-    // Annual interest rate (percentage)
-    double m_annualInterestRate;
-    // Number of years for the investment
-    int m_numberOfYears;
+    double m_initialInvestmentAmount;  // User's initial investment amount
+    double m_monthlyDeposit;           // User's monthly deposit
+    double m_annualInterestRate;       // Annual interest rate as a percentage
+    int m_numberOfYears;               // Number of years for the investment
 
     // Helper function to display the results of the investment calculations
     // in a tabular format.
@@ -37,4 +34,4 @@ public:
     bool restartCalculator();
 };
 
-#endif
+#endif  // End of the header

@@ -23,7 +23,7 @@ void InvestmentCalculator::displayResults(const std::vector<std::tuple<int, doub
     }
 }
 
-// Calculates and displays balances without monthly deposits
+// This method calculates investment growth without monthly deposits.
 void InvestmentCalculator::calculateWithoutDeposits() const {
     std::vector<std::tuple<int, double, double>> results;
     double openingBalance = m_initialInvestmentAmount;
@@ -59,7 +59,7 @@ void InvestmentCalculator::calculateWithDeposits() const {
     displayResults(results, "Balance and Interest With Additional Monthly Deposits");
 }
 
-// Prompts user for new values and restarts the calculator
+// Prompts the user to decide whether to restart the program.
 bool InvestmentCalculator::restartCalculator() {
     char userChoice;
 

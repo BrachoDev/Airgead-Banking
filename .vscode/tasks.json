@@ -7,10 +7,10 @@
             "command": "g++",
             "args": [
                 "-g",
-                "main.cpp",
-                "InvestmentCalculator.cpp",
+                "${workspaceFolder}/main.cpp",
+                "${workspaceFolder}/InvestmentCalculator.cpp",
                 "-o",
-                "AirgeadBanking" // Name of the output executable
+                "${workspaceFolder}/AirgeadBanking.exe" // Output executable name
             ],
             "group": {
                 "kind": "build",
@@ -18,16 +18,6 @@
             },
             "problemMatcher": ["$gcc"],
             "detail": "Generated task by the C++ extension."
-        },
-        {
-            "label": "run",
-            "type": "shell",
-            "command": "./AirgeadBanking.exe",
-            "group": {
-                "kind": "test",
-                "isDefault": true
-            },
-            "dependsOn": "build"
         }
     ]
 }

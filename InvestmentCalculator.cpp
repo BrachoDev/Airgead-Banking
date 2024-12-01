@@ -1,15 +1,18 @@
 #include "InvestmentCalculator.h"
 
-// Constructor to initialize investment data
+// Constructor to initialize investment details from the user
 InvestmentCalculator::InvestmentCalculator(double t_initialInvestmentAmount, double t_monthlyDeposit,double t_annualInterestRate, int t_numberOfYears): 
     m_initialInvestmentAmount(t_initialInvestmentAmount),
     m_monthlyDeposit(t_monthlyDeposit),
     m_annualInterestRate(t_annualInterestRate),
     m_numberOfYears(t_numberOfYears) {}
 
-// Helper method to display results
+// Helper method to display results in a table
 void InvestmentCalculator::displayResults(const std::vector<std::tuple<int, double, double>>& results, const std::string& header) const {
+    
     std::cout << "\n" << header << "\n";
+    std::cout << "------------------------------------------------------\n";
+    std::cout << "------------------------------------------------------\n";
     std::cout << std::left << std::setw(10) << "Year" << std::setw(20) << "Year End Balance" << "Year End Earned Interest\n";
     std::cout << "------------------------------------------------------\n";
 

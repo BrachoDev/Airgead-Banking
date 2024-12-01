@@ -1,6 +1,6 @@
 {
-  "cSpell.words": ["Airgead"],
   "files.associations": {
-    "iomanip": "cpp"
+    "ostream": "cpp",
+    "iostream": "cpp"
   }
 }
